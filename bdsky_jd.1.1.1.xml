@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data
+id="beast_2_jd_1_1_1"
+spec="Alignment"
+name="alignment">
+    
+</data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="100000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:beast_2_jd_1_1_1" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:beast_2_jd_1_1_1" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-MM-dd" traitname="date" value="EPI_ISL_18265403=2023-09-04,EPI_ISL_18394519=2023-09-04,EPI_ISL_18415287=2023-09-18,EPI_ISL_18437432=2023-09-27,EPI_ISL_18437393=2023-10-12,EPI_ISL_18454137=2023-10-02,EPI_ISL_18454150=2023-10-05,EPI_ISL_18454138=2023-10-02,EPI_ISL_18454113=2023-09-27,EPI_ISL_18480917=2023-10-08,EPI_ISL_18480922=2023-10-19,EPI_ISL_18493663=2023-10-02,EPI_ISL_18493652=2023-09-26,EPI_ISL_18493686=2023-10-17,EPI_ISL_18493688=2023-10-10,EPI_ISL_18493656=2023-09-26,EPI_ISL_18515907=2023-10-06,EPI_ISL_18516011=2023-09-29,EPI_ISL_18515968=2023-10-06,EPI_ISL_18516037=2023-09-28,EPI_ISL_18515982=2023-10-05,EPI_ISL_18515933=2023-10-09,EPI_ISL_18515919=2023-10-05,EPI_ISL_18515815=2023-10-05,EPI_ISL_18515910=2023-09-29,EPI_ISL_18515912=2023-10-07,EPI_ISL_18515954=2023-10-01,EPI_ISL_18515890=2023-10-07,EPI_ISL_18515984=2023-10-05,EPI_ISL_18516039=2023-09-29,EPI_ISL_18515986=2023-10-03,EPI_ISL_18516067=2023-10-06,EPI_ISL_18515971=2023-09-28,EPI_ISL_18516019=2023-10-02,EPI_ISL_18516026=2023-10-03,EPI_ISL_18516018=2023-10-05,EPI_ISL_18515961=2023-09-28,EPI_ISL_18515967=2023-09-28,EPI_ISL_18515952=2023-09-26,EPI_ISL_18515957=2023-10-06,EPI_ISL_18515959=2023-09-29,EPI_ISL_18516003=2023-10-03,EPI_ISL_18516078=2023-10-02,EPI_ISL_18516069=2023-09-26,EPI_ISL_18515885=2023-10-05,EPI_ISL_18515896=2023-10-07,EPI_ISL_18516075=2023-10-02,EPI_ISL_18515895=2023-10-08,EPI_ISL_18515897=2023-10-07,EPI_ISL_18515876=2023-10-03,EPI_ISL_18515879=2023-10-05,EPI_ISL_18515862=2023-09-29,EPI_ISL_18516050=2023-10-03,EPI_ISL_18515999=2023-10-03,EPI_ISL_18516043=2023-09-28,EPI_ISL_18516044=2023-09-26,EPI_ISL_18515871=2023-10-08,EPI_ISL_18515866=2023-10-06,EPI_ISL_18515792=2023-09-26,EPI_ISL_18524776=2023-10-25,EPI_ISL_18524734=2023-10-16,EPI_ISL_18524736=2023-10-16,EPI_ISL_18524791=2023-10-31,EPI_ISL_18524793=2023-10-31,EPI_ISL_18563328=2023-10-16,EPI_ISL_18563351=2023-10-24,EPI_ISL_18563356=2023-10-26,EPI_ISL_18563320=2023-10-09,EPI_ISL_18563353=2023-10-24,EPI_ISL_18563297=2023-09-29,EPI_ISL_18563190=2023-11-02,EPI_ISL_18603593=2023-11-09,EPI_ISL_18603604=2023-11-06,EPI_ISL_18608830=2023-11-23,EPI_ISL_18603618=2023-11-16,EPI_ISL_18603590=2023-11-13,EPI_ISL_18603616=2023-11-08,EPI_ISL_18603592=2023-11-09,EPI_ISL_18603595=2023-11-06,EPI_ISL_18603624=2023-11-12,EPI_ISL_18602624=2023-10-15,EPI_ISL_18602622=2023-10-23,EPI_ISL_18602623=2023-10-13,EPI_ISL_18608775=2023-11-07,EPI_ISL_18608847=2023-11-29,EPI_ISL_18608854=2023-11-30,EPI_ISL_18608782=2023-11-08,EPI_ISL_18608838=2023-11-26,EPI_ISL_18608790=2023-11-12,EPI_ISL_18608856=2023-11-30,EPI_ISL_18608828=2023-11-23,EPI_ISL_18608855=2023-11-30,EPI_ISL_18608800=2023-11-13,EPI_ISL_18608850=2023-11-29,EPI_ISL_18608816=2023-11-19,EPI_ISL_18608852=2023-11-30,EPI_ISL_18608829=2023-11-23,EPI_ISL_18608853=2023-11-30,EPI_ISL_18608843=2023-11-28,EPI_ISL_18637903=2023-10-14,EPI_ISL_18637899=2023-10-03,EPI_ISL_18637876=2023-10-04,EPI_ISL_18637888=2023-10-05,EPI_ISL_18637881=2023-10-16,EPI_ISL_18648317=2023-11-23,EPI_ISL_18655859=2023-10-10,EPI_ISL_18669426=2023-10-04,EPI_ISL_18669446=2023-11-08,EPI_ISL_18669442=2023-10-31,EPI_ISL_18669438=2023-11-08,EPI_ISL_18669451=2023-11-13,EPI_ISL_18669458=2023-11-16,EPI_ISL_18669427=2023-10-02,EPI_ISL_18669413=2023-09-29,EPI_ISL_18669454=2023-11-17,EPI_ISL_18669459=2023-11-15,EPI_ISL_18702827=2023-10-04,EPI_ISL_18702869=2023-10-10,EPI_ISL_18702842=2023-10-15,EPI_ISL_18702828=2023-10-17,EPI_ISL_18702852=2023-10-25,EPI_ISL_18702807=2023-10-11,EPI_ISL_18742130=2023-11-09,EPI_ISL_18742151=2023-12-05,EPI_ISL_18742154=2023-12-04,EPI_ISL_18742125=2023-11-12,EPI_ISL_18742304=2023-12-21,EPI_ISL_18742310=2023-12-27,EPI_ISL_18742300=2023-12-13,EPI_ISL_18742273=2023-12-09,EPI_ISL_18742313=2023-12-16,EPI_ISL_18742290=2023-12-07,EPI_ISL_18742316=2023-12-22,EPI_ISL_18742281=2023-12-09,EPI_ISL_18751245=2023-10-16,EPI_ISL_18751227=2023-10-18,EPI_ISL_18773301=2023-09-26,EPI_ISL_18773423=2023-11-01,EPI_ISL_18773315=2023-09-28,EPI_ISL_18773309=2023-09-27,EPI_ISL_18773373=2023-10-18,EPI_ISL_18773391=2023-10-26,EPI_ISL_18773448=2023-09-29,EPI_ISL_18773469=2023-11-07,EPI_ISL_18773393=2023-10-26,EPI_ISL_18773424=2023-11-06,EPI_ISL_18773406=2023-11-07,EPI_ISL_18773403=2023-11-06,EPI_ISL_18773402=2023-11-06,EPI_ISL_18773405=2023-11-06,EPI_ISL_18773470=2023-11-06,EPI_ISL_18773377=2023-10-23,EPI_ISL_18814434=2023-11-01,EPI_ISL_18814430=2023-11-23,EPI_ISL_18814431=2023-11-06,EPI_ISL_18814436=2023-12-08,EPI_ISL_18814444=2023-10-23,EPI_ISL_18814443=2023-10-23,EPI_ISL_18814445=2023-10-23,EPI_ISL_18814454=2023-10-18,EPI_ISL_18814453=2023-10-23,EPI_ISL_18814455=2023-10-24,EPI_ISL_18814451=2023-10-23,EPI_ISL_18814466=2024-01-07,EPI_ISL_18814446=2023-10-24,EPI_ISL_18814452=2023-10-22,EPI_ISL_18814435=2023-11-13,EPI_ISL_18814437=2023-11-07,EPI_ISL_18814447=2023-10-23,EPI_ISL_18814449=2023-10-24,EPI_ISL_18814448=2023-10-17,EPI_ISL_18829355=2023-10-30,EPI_ISL_18829357=2023-10-25,EPI_ISL_18829390=2023-10-29,EPI_ISL_18829442=2023-10-26,EPI_ISL_18829524=2023-10-25,EPI_ISL_18829583=2023-10-25,EPI_ISL_18829590=2023-10-31,EPI_ISL_18829594=2023-10-25,EPI_ISL_18829617=2023-10-28,EPI_ISL_18829629=2023-10-26,EPI_ISL_18829636=2023-10-20,EPI_ISL_18829663=2023-11-01,EPI_ISL_18834440=2023-10-30,EPI_ISL_18848821=2024-01-02,EPI_ISL_18848834=2023-12-19,EPI_ISL_18848842=2024-01-08,EPI_ISL_18848844=2024-01-09,EPI_ISL_18848859=2024-01-10,EPI_ISL_18848861=2024-01-09,EPI_ISL_18848868=2024-01-10,EPI_ISL_18848870=2024-01-11,EPI_ISL_18848898=2024-01-15,EPI_ISL_18848905=2024-01-16,EPI_ISL_18852885=2023-10-24,EPI_ISL_18852888=2023-11-08,EPI_ISL_18852892=2023-11-12,EPI_ISL_18852903=2023-11-08,EPI_ISL_18852914=2023-11-09,EPI_ISL_18852915=2023-11-10,EPI_ISL_18852919=2023-10-31,EPI_ISL_18852922=2023-10-31,EPI_ISL_18852924=2023-11-08,EPI_ISL_18852926=2023-11-06,EPI_ISL_18852932=2023-10-26,EPI_ISL_18852933=2023-10-29,EPI_ISL_18852939=2023-10-31,EPI_ISL_18852940=2023-10-27,EPI_ISL_18872370=2024-01-25,EPI_ISL_18880066=2024-01-10,EPI_ISL_18934201=2023-11-16,EPI_ISL_18934210=2023-10-27,EPI_ISL_18934212=2023-10-31,EPI_ISL_18934214=2023-11-03,EPI_ISL_18934216=2023-11-04,EPI_ISL_18934232=2023-10-26,EPI_ISL_18934240=2023-10-30,EPI_ISL_18934241=2023-11-06,EPI_ISL_18934259=2023-10-31,EPI_ISL_18934262=2023-10-31,EPI_ISL_18934264=2023-11-09,EPI_ISL_18934266=2023-11-19,EPI_ISL_18934269=2023-11-14,EPI_ISL_18934277=2023-11-06,EPI_ISL_18934278=2023-11-13,EPI_ISL_18934282=2023-11-09,EPI_ISL_18934285=2023-11-14,EPI_ISL_18934292=2023-10-26,EPI_ISL_18934298=2023-11-13,EPI_ISL_18934300=2023-10-26,EPI_ISL_18934304=2023-11-06,EPI_ISL_18934305=2023-11-14,EPI_ISL_18934306=2023-10-30,EPI_ISL_18934308=2023-11-06,EPI_ISL_18934314=2023-10-31,EPI_ISL_18934319=2023-10-30,EPI_ISL_18934322=2023-10-30,EPI_ISL_18934326=2023-11-06,EPI_ISL_18934328=2023-10-24,EPI_ISL_18952079=2023-11-16,EPI_ISL_18952085=2023-11-13,EPI_ISL_18952091=2023-11-09,EPI_ISL_18952092=2023-11-14,EPI_ISL_18952095=2023-11-09,EPI_ISL_18970009=2023-08-23,EPI_ISL_18970043=2023-09-15,EPI_ISL_18970044=2023-09-15,EPI_ISL_18970058=2023-09-13,EPI_ISL_18970096=2023-09-28,EPI_ISL_18970097=2023-09-28,EPI_ISL_18970099=2023-09-18,EPI_ISL_18970100=2023-09-21,EPI_ISL_18970117=2023-09-21,EPI_ISL_18970157=2023-10-14,EPI_ISL_18970160=2023-10-10,EPI_ISL_18970166=2023-10-03,EPI_ISL_18970170=2023-10-06,EPI_ISL_18970173=2023-10-04,EPI_ISL_18970179=2023-10-05,EPI_ISL_18970182=2023-10-03,EPI_ISL_18970221=2023-10-19,EPI_ISL_18970222=2023-10-18,EPI_ISL_18970223=2023-10-17,EPI_ISL_18970224=2023-10-17,EPI_ISL_18970225=2023-10-17,EPI_ISL_18970228=2023-10-13,EPI_ISL_18970258=2023-10-24,EPI_ISL_18970259=2023-10-23,EPI_ISL_18970260=2023-10-19,EPI_ISL_18970261=2023-10-18,EPI_ISL_18970262=2023-10-24,EPI_ISL_18970263=2023-10-25,EPI_ISL_18970294=2023-11-07,EPI_ISL_18970296=2023-11-13,EPI_ISL_18970332=2023-10-30,EPI_ISL_18970333=2023-10-24,EPI_ISL_18970335=2023-11-07,EPI_ISL_18970337=2023-11-08,EPI_ISL_18970338=2023-11-01,EPI_ISL_18970341=2023-12-01,EPI_ISL_18970352=2023-11-30,EPI_ISL_18970353=2023-12-02,EPI_ISL_18970354=2023-11-29,EPI_ISL_18970355=2023-12-05,EPI_ISL_18970366=2023-11-08,EPI_ISL_18970367=2023-11-30,EPI_ISL_18970369=2023-12-01,EPI_ISL_18970370=2023-12-15,EPI_ISL_18970387=2024-01-24,EPI_ISL_18970388=2023-12-26,EPI_ISL_18970452=2024-02-06,EPI_ISL_18971262=2023-12-19,EPI_ISL_18971264=2024-02-04,EPI_ISL_18971270=2024-02-05,EPI_ISL_18971275=2024-01-30,EPI_ISL_18971278=2023-12-19,EPI_ISL_18971294=2024-02-02,EPI_ISL_18971499=2023-11-13,EPI_ISL_18971834=2023-10-17,EPI_ISL_18983909=2023-10-18,EPI_ISL_18983912=2023-11-07,EPI_ISL_19003372=2023-11-12">
+                <taxa id="TaxonSet.beast_2_jd_1_1_1" spec="TaxonSet">
+                    <alignment idref="beast_2_jd_1_1_1"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.beast_2_jd_1_1_1"/>
+        </tree>
+        <parameter id="mutationRate.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="gammaShape.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="proportionInvariant.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.0</parameter>
+        <parameter id="rateAC.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAG.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAT.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateCG.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateGT.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="ucldMean.c:beast_2_jd_1_1_1" spec="parameter.RealParameter" name="stateNode">0.001</parameter>
+        <parameter id="ucldStdev.c:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:beast_2_jd_1_1_1" spec="parameter.IntegerParameter" dimension="602">1</stateNode>
+        <parameter id="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1.0</parameter>
+        <parameter id="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="parameter.RealParameter" dimension="8" lower="0.0" name="stateNode" upper="Infinity">2.0</parameter>
+        <parameter id="samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.01</parameter>
+        <parameter id="freqParameter.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+
+    <init id="RandomTree.t:beast_2_jd_1_1_1" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:beast_2_jd_1_1_1" taxa="@beast_2_jd_1_1_1">
+        <populationModel id="ConstantPopulation0.t:beast_2_jd_1_1_1" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:beast_2_jd_1_1_1" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+
+            <!-- <distribution id="BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="beast.evolution.speciation.BirthDeathSkylineModel" becomeUninfectiousRate="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" conditionOnRoot="true" reproductiveNumber="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" samplingProportion="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" tree="@Tree.t:beast_2_jd_1_1_1"/> -->
+
+
+
+            <distribution id="BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"
+                              spec="beast.evolution.speciation.BirthDeathSkylineModel"
+                              conditionOnRoot="true" 
+                              tree="@Tree.t:beast_2_jd_1_1_1"
+                              reproductiveNumber="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"
+                              becomeUninfectiousRate="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"
+                              samplingProportion="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" >
+                    <birthRateChangeTimes spec="parameter.RealParameter" value="0.0 0.518 0.433 0.351 0.266 0.184 0.099 0.014 "/>
+                    <samplingRateChangeTimes spec="parameter.RealParameter" value="0 0.46"/> 
+                    <reverseTimeArrays spec="beast.core.parameter.BooleanParameter" value="true false true false false false"/>
+            </distribution>
+
+            <prior id="becomeUninfectiousRatePrior_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" name="distribution" x="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1">
+                <Exponential id="Exponential.1" name="distr">
+                    <parameter id="RealParameter.30" spec="parameter.RealParameter" estimate="false" name="mean">36.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="FrequenciesPrior.s:beast_2_jd_1_1_1" name="distribution" x="@freqParameter.s:beast_2_jd_1_1_1">
+                <Uniform id="Uniform.7" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:beast_2_jd_1_1_1" name="distribution" x="@gammaShape.s:beast_2_jd_1_1_1">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="PropInvariantPrior.s:beast_2_jd_1_1_1" name="distribution" x="@proportionInvariant.s:beast_2_jd_1_1_1">
+                <Uniform id="Uniform.6" name="distr"/>
+            </prior>
+            <prior id="RateACPrior.s:beast_2_jd_1_1_1" name="distribution" x="@rateAC.s:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.2" name="distr">
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateAGPrior.s:beast_2_jd_1_1_1" name="distribution" x="@rateAG.s:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.9" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.10" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateATPrior.s:beast_2_jd_1_1_1" name="distribution" x="@rateAT.s:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.4" name="distr">
+                    <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateCGPrior.s:beast_2_jd_1_1_1" name="distribution" x="@rateCG.s:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.5" name="distr">
+                    <parameter id="RealParameter.13" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.14" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateGTPrior.s:beast_2_jd_1_1_1" name="distribution" x="@rateGT.s:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.7" name="distr">
+                    <parameter id="RealParameter.17" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.18" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="reproductiveNumberPrior_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" name="distribution" x="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1">
+                <LogNormal id="LogNormalDistributionModel.2" name="distr">
+                    <parameter id="RealParameter.26" spec="parameter.RealParameter" estimate="false" name="M">0.8</parameter>
+                    <parameter id="RealParameter.27" spec="parameter.RealParameter" estimate="false" name="S">0.5</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="samplingProportionPrior_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" name="distribution" x="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1">
+                <Beta id="Beta.1" name="distr">
+                    <parameter id="RealParameter.28" spec="parameter.RealParameter" estimate="false" name="alpha">1.0</parameter>
+                    <parameter id="RealParameter.29" spec="parameter.RealParameter" estimate="false" name="beta">275.0</parameter>
+                </Beta>
+            </prior>
+            <prior id="MeanRatePrior.c:beast_2_jd_1_1_1" name="distribution" x="@ucldMean.c:beast_2_jd_1_1_1">
+                <Uniform id="Uniform.8" lower="5.0E-4" name="distr" upper="0.0015"/>
+            </prior>
+            <prior id="ucldStdevPrior.c:beast_2_jd_1_1_1" name="distribution" x="@ucldStdev.c:beast_2_jd_1_1_1">
+                <Gamma id="Gamma.8" name="distr">
+                    <parameter id="RealParameter.20" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.21" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+            <distribution id="root.height.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:beast_2_jd_1_1_1">
+                <taxonset id="root.height" spec="TaxonSet">
+                    <taxon id="EPI_ISL_18265403" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18394519" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415287" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18437393" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18437432" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454113" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454137" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454138" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454150" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18480917" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18480922" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18493652" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18493656" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18493663" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18493686" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18493688" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515792" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515815" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515862" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515866" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515871" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515876" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515879" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515885" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515890" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515895" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515896" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515897" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515907" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515910" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515912" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515919" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515933" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515952" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515954" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515957" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515959" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515961" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515967" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515968" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515971" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515982" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515984" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515986" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515999" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516003" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516011" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516018" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516019" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516026" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516037" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516039" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516043" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516044" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516050" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516067" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516069" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516075" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516078" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524734" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524736" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524776" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524791" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524793" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563190" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563297" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563320" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563328" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563351" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563353" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563356" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18602622" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18602623" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18602624" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603590" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603592" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603593" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603595" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603604" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603616" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603618" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18603624" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608775" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608782" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608790" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608800" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608816" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608828" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608829" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608830" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608838" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608843" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608847" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608850" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608852" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608853" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608854" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608855" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608856" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637876" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637881" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637888" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637899" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637903" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648317" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18655859" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669413" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669426" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669427" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669438" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669442" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669446" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669451" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669454" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669458" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18669459" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702807" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702827" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702828" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702842" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702852" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702869" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742125" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742130" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742151" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742154" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742273" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742281" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742290" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742300" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742304" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742310" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742313" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742316" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18751227" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18751245" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773301" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773309" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773315" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773373" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773377" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773391" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773393" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773402" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773403" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773405" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773406" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773423" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773424" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773448" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773469" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773470" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814430" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814431" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814434" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814435" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814436" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814437" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814443" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814444" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814445" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814446" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814447" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814448" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814449" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814451" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814452" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814453" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814454" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814455" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814466" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829355" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829357" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829390" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829442" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829524" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829583" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829590" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829594" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829617" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829629" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829636" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829663" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18834440" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848821" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848834" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848842" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848844" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848859" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848861" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848868" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848870" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848898" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848905" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852885" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852888" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852892" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852903" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852914" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852915" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852919" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852922" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852924" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852926" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852932" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852933" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852939" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852940" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18872370" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18880066" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934201" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934210" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934212" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934214" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934216" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934232" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934240" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934241" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934259" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934262" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934264" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934266" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934269" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934277" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934278" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934282" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934285" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934292" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934298" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934300" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934304" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934305" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934306" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934308" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934314" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934319" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934322" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934326" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934328" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18952079" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18952085" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18952091" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18952092" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18952095" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970009" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970043" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970044" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970058" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970096" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970097" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970099" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970100" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970117" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970157" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970160" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970166" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970170" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970173" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970179" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970182" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970221" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970222" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970223" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970224" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970225" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970228" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970258" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970259" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970260" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970261" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970262" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970263" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970294" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970296" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970332" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970333" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970335" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970337" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970338" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970341" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970352" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970353" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970354" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970355" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970366" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970367" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970369" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970370" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970387" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970388" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18970452" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971262" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971264" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971270" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971275" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971278" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971294" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971499" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971834" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18983909" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18983912" spec="Taxon"/>
+                    <taxon id="EPI_ISL_19003372" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.31" spec="parameter.RealParameter" estimate="false" name="mean">2023.52</parameter>
+                    <parameter id="RealParameter.32" spec="parameter.RealParameter" estimate="false" name="sigma">0.01</parameter>
+                </Normal>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.beast_2_jd_1_1_1" spec="ThreadedTreeLikelihood" data="@beast_2_jd_1_1_1" tree="@Tree.t:beast_2_jd_1_1_1">
+                <siteModel id="SiteModel.s:beast_2_jd_1_1_1" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:beast_2_jd_1_1_1" proportionInvariant="@proportionInvariant.s:beast_2_jd_1_1_1" shape="@gammaShape.s:beast_2_jd_1_1_1">
+                    <substModel id="gtr.s:beast_2_jd_1_1_1" spec="GTR" rateAC="@rateAC.s:beast_2_jd_1_1_1" rateAG="@rateAG.s:beast_2_jd_1_1_1" rateAT="@rateAT.s:beast_2_jd_1_1_1" rateCG="@rateCG.s:beast_2_jd_1_1_1" rateGT="@rateGT.s:beast_2_jd_1_1_1">
+                        <parameter id="rateCT.s:beast_2_jd_1_1_1" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <frequencies id="estimatedFreqs.s:beast_2_jd_1_1_1" spec="Frequencies" frequencies="@freqParameter.s:beast_2_jd_1_1_1"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:beast_2_jd_1_1_1" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:beast_2_jd_1_1_1" rateCategories="@rateCategories.c:beast_2_jd_1_1_1" tree="@Tree.t:beast_2_jd_1_1_1">
+                    <LogNormal id="LogNormalDistributionModel.c:beast_2_jd_1_1_1" S="@ucldStdev.c:beast_2_jd_1_1_1" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.19" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+        <distribution id="fossilCalibrations" spec="util.CompoundDistribution"/>
+    </distribution>
+
+    <operator id="gammaShapeScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@gammaShape.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
+        <parameter idref="mutationRate.s:beast_2_jd_1_1_1"/>
+        <weightvector id="weightparameter" spec="parameter.IntegerParameter" estimate="false" lower="0" upper="0">29870</weightvector>
+    </operator>
+
+    <operator id="proportionInvariantScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@proportionInvariant.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateACScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@rateAC.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateAGScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@rateAG.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateATScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@rateAT.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateCGScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@rateCG.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateGTScaler.s:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@rateGT.s:beast_2_jd_1_1_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="ucldMeanScaler.c:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@ucldMean.c:beast_2_jd_1_1_1" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@ucldStdev.c:beast_2_jd_1_1_1" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:beast_2_jd_1_1_1" spec="IntRandomWalkOperator" parameter="@rateCategories.c:beast_2_jd_1_1_1" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:beast_2_jd_1_1_1" spec="SwapOperator" intparameter="@rateCategories.c:beast_2_jd_1_1_1" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:beast_2_jd_1_1_1" spec="UniformOperator" parameter="@rateCategories.c:beast_2_jd_1_1_1" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:beast_2_jd_1_1_1" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:beast_2_jd_1_1_1"/>
+        <down idref="Tree.t:beast_2_jd_1_1_1"/>
+    </operator>
+
+    <operator id="BDSKY_SerialCondRootTreeScaler.t:beast_2_jd_1_1_1" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:beast_2_jd_1_1_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootTreeRootScaler.t:beast_2_jd_1_1_1" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:beast_2_jd_1_1_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootUniformOperator.t:beast_2_jd_1_1_1" spec="Uniform" tree="@Tree.t:beast_2_jd_1_1_1" weight="30.0"/>
+
+    <operator id="BDSKY_SerialCondRootSubtreeSlide.t:beast_2_jd_1_1_1" spec="SubtreeSlide" tree="@Tree.t:beast_2_jd_1_1_1" weight="15.0"/>
+
+    <operator id="BDSKY_SerialCondRootNarrow.t:beast_2_jd_1_1_1" spec="Exchange" tree="@Tree.t:beast_2_jd_1_1_1" weight="15.0"/>
+
+    <operator id="BDSKY_SerialCondRootWide.t:beast_2_jd_1_1_1" spec="Exchange" isNarrow="false" tree="@Tree.t:beast_2_jd_1_1_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootWilsonBalding.t:beast_2_jd_1_1_1" spec="WilsonBalding" tree="@Tree.t:beast_2_jd_1_1_1" weight="3.0"/>
+
+    <operator id="becomeUninfectiousRateScaler_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" weight="2.0"/>
+
+    <operator id="reproductiveNumberScaler_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" weight="10.0"/>
+
+    <operator id="samplingProportionScaler_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="ScaleOperator" parameter="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" weight="10.0"/>
+
+    <operator id="updownBD_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1" spec="UpDownOperator" scaleFactor="0.75" weight="2.0">
+        <up idref="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+        <down idref="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+    </operator>
+
+    <operator id="FrequenciesExchanger.s:beast_2_jd_1_1_1" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:beast_2_jd_1_1_1"/>
+    </operator>
+
+    <logger id="tracelog" spec="Logger" fileName="beast_2_jd_1_1_1.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.beast_2_jd_1_1_1"/>
+        <log id="TreeHeight.t:beast_2_jd_1_1_1" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:beast_2_jd_1_1_1"/>
+        <log idref="mutationRate.s:beast_2_jd_1_1_1"/>
+        <log idref="gammaShape.s:beast_2_jd_1_1_1"/>
+        <log idref="proportionInvariant.s:beast_2_jd_1_1_1"/>
+        <log idref="rateAC.s:beast_2_jd_1_1_1"/>
+        <log idref="rateAG.s:beast_2_jd_1_1_1"/>
+        <log idref="rateAT.s:beast_2_jd_1_1_1"/>
+        <log idref="rateCG.s:beast_2_jd_1_1_1"/>
+        <log idref="rateGT.s:beast_2_jd_1_1_1"/>
+        <log idref="ucldMean.c:beast_2_jd_1_1_1"/>
+        <log idref="ucldStdev.c:beast_2_jd_1_1_1"/>
+        <log id="rate.c:beast_2_jd_1_1_1" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:beast_2_jd_1_1_1" tree="@Tree.t:beast_2_jd_1_1_1"/>
+        <log idref="BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+        <log idref="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+        <log idref="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+        <log idref="samplingProportion_BDSKY_SerialCondRoot.t:beast_2_jd_1_1_1"/>
+        <log idref="root.height.prior"/>
+        <log idref="freqParameter.s:beast_2_jd_1_1_1"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="10000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:beast_2_jd_1_1_1" spec="Logger" fileName="$(tree).trees" logEvery="10000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:beast_2_jd_1_1_1" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:beast_2_jd_1_1_1" tree="@Tree.t:beast_2_jd_1_1_1"/>
+    </logger>
+
+</run>
+
+</beast>

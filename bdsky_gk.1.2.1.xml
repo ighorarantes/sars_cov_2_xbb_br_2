@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" required="" version="2.6">
+
+
+    <data
+id="beast_2_gk_1_2_1"
+spec="Alignment"
+name="alignment">
+    
+</data>
+
+
+    
+
+
+    
+
+
+    
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<run id="mcmc" spec="MCMC" chainLength="100000000">
+    <state id="state" spec="State" storeEvery="5000">
+        <tree id="Tree.t:beast_2_gk_1_2_1" spec="beast.evolution.tree.Tree" name="stateNode">
+            <trait id="dateTrait.t:beast_2_gk_1_2_1" spec="beast.evolution.tree.TraitSet" dateFormat="yyyy-MM-dd" traitname="date" value="EPI_ISL_19058842=2023-12-06,EPI_ISL_18971324=2024-01-08,EPI_ISL_18971319=2024-01-22,EPI_ISL_18961960=2023-11-29,EPI_ISL_18961955=2023-11-29,EPI_ISL_18934223=2023-10-30,EPI_ISL_18852887=2023-10-26,EPI_ISL_18848890=2024-01-18,EPI_ISL_18848852=2024-01-06,EPI_ISL_18848830=2024-01-05,EPI_ISL_18829678=2023-11-09,EPI_ISL_18829602=2023-11-10,EPI_ISL_18829599=2023-11-06,EPI_ISL_18814320=2023-10-27,EPI_ISL_18814319=2023-10-30,EPI_ISL_18814318=2023-12-07,EPI_ISL_18814316=2024-01-09,EPI_ISL_18814313=2023-10-24,EPI_ISL_18773500=2023-10-05,EPI_ISL_18773494=2023-09-30,EPI_ISL_18773471=2023-10-31,EPI_ISL_18773412=2023-11-06,EPI_ISL_18773410=2023-11-07,EPI_ISL_18773388=2023-10-26,EPI_ISL_18773332=2023-09-30,EPI_ISL_18773251=2023-09-15,EPI_ISL_18742291=2023-12-19,EPI_ISL_18742275=2023-12-04,EPI_ISL_18702855=2023-10-26,EPI_ISL_18702854=2023-10-26,EPI_ISL_18702851=2023-10-26,EPI_ISL_18655874=2023-10-24,EPI_ISL_18648323=2023-11-17,EPI_ISL_18648321=2023-11-24,EPI_ISL_18648316=2023-11-17,EPI_ISL_18648314=2023-11-21,EPI_ISL_18648239=2023-11-27,EPI_ISL_18637875=2023-11-13,EPI_ISL_18637874=2023-11-13,EPI_ISL_18637866=2023-11-19,EPI_ISL_18637766=2023-10-27,EPI_ISL_18637761=2023-10-24,EPI_ISL_18637749=2023-11-03,EPI_ISL_18637744=2023-11-06,EPI_ISL_18637741=2023-10-24,EPI_ISL_18637733=2023-10-25,EPI_ISL_18637724=2023-10-25,EPI_ISL_18637723=2023-11-06,EPI_ISL_18637721=2023-09-30,EPI_ISL_18637717=2023-11-06,EPI_ISL_18608813=2023-11-17,EPI_ISL_18608806=2023-11-13,EPI_ISL_18608788=2023-11-10,EPI_ISL_18563186=2023-10-10,EPI_ISL_18524796=2023-10-31,EPI_ISL_18524778=2023-10-26,EPI_ISL_18516084=2023-10-02,EPI_ISL_18515948=2023-10-09,EPI_ISL_18515930=2023-10-19,EPI_ISL_18515927=2023-10-19,EPI_ISL_18515925=2023-10-19,EPI_ISL_18515856=2023-10-10,EPI_ISL_18515848=2023-10-16,EPI_ISL_18515813=2023-09-27,EPI_ISL_18515800=2023-10-05,EPI_ISL_18515798=2023-10-02,EPI_ISL_18515795=2023-09-26,EPI_ISL_18515764=2023-10-27,EPI_ISL_18515760=2023-10-06,EPI_ISL_18515754=2023-10-04,EPI_ISL_18515748=2023-10-19,EPI_ISL_18454149=2023-10-05,EPI_ISL_18454123=2023-09-28,EPI_ISL_18454122=2023-09-27,EPI_ISL_18453929=2023-09-26,EPI_ISL_18453923=2023-09-26,EPI_ISL_18453916=2023-09-25,EPI_ISL_18453893=2023-09-14,EPI_ISL_18415724=2023-09-21,EPI_ISL_18415718=2023-09-21,EPI_ISL_18415626=2023-09-11,EPI_ISL_18415622=2023-09-04,EPI_ISL_18415621=2023-09-04,EPI_ISL_18415594=2023-09-11,EPI_ISL_18415261=2023-09-13,EPI_ISL_18394516=2023-09-06,EPI_ISL_18345996=2023-08-25,EPI_ISL_18345948=2023-09-04,EPI_ISL_18345853=2023-09-04,EPI_ISL_18345834=2023-09-04,EPI_ISL_18345829=2023-09-08,EPI_ISL_18290773=2023-08-21">
+                <taxa id="TaxonSet.beast_2_gk_1_2_1" spec="TaxonSet">
+                    <alignment idref="beast_2_gk_1_2_1"/>
+                </taxa>
+            </trait>
+            <taxonset idref="TaxonSet.beast_2_gk_1_2_1"/>
+        </tree>
+        <parameter id="mutationRate.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="proportionInvariant.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.0</parameter>
+        <parameter id="rateAC.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAG.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateAT.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateCG.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="rateGT.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">1.0</parameter>
+        <parameter id="ucldMean.c:beast_2_gk_1_2_1" spec="parameter.RealParameter" name="stateNode">0.001</parameter>
+        <parameter id="ucldStdev.c:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode">0.1</parameter>
+        <stateNode id="rateCategories.c:beast_2_gk_1_2_1" spec="parameter.IntegerParameter" dimension="182">1</stateNode>
+        <parameter id="gammaShape.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        <parameter id="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1.0</parameter>
+        <parameter id="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="parameter.RealParameter" dimension="8" lower="0.0" name="stateNode" upper="Infinity">2.0</parameter>
+        <parameter id="samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.01</parameter>
+        <parameter id="freqParameter.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    </state>
+
+    <init id="RandomTree.t:beast_2_gk_1_2_1" spec="beast.evolution.tree.RandomTree" estimate="false" initial="@Tree.t:beast_2_gk_1_2_1" taxa="@beast_2_gk_1_2_1">
+        <populationModel id="ConstantPopulation0.t:beast_2_gk_1_2_1" spec="ConstantPopulation">
+            <parameter id="randomPopSize.t:beast_2_gk_1_2_1" spec="parameter.RealParameter" name="popSize">1.0</parameter>
+        </populationModel>
+    </init>
+
+    <distribution id="posterior" spec="util.CompoundDistribution">
+        <distribution id="prior" spec="util.CompoundDistribution">
+
+            <!-- <distribution id="BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="beast.evolution.speciation.BirthDeathSkylineModel" becomeUninfectiousRate="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" conditionOnRoot="true" reproductiveNumber="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" samplingProportion="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" tree="@Tree.t:beast_2_gk_1_2_1"/> -->
+
+        <distribution id="BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"
+                              spec="beast.evolution.speciation.BirthDeathSkylineModel"
+                              conditionOnRoot="true" 
+                              tree="@Tree.t:beast_2_gk_1_2_1"
+                              reproductiveNumber="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"
+                              becomeUninfectiousRate="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"
+                              samplingProportion="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" >
+                    <birthRateChangeTimes spec="parameter.RealParameter" value="0.0 0.62 0.477 0.392 0.310 0.225 0.142 0.058"/>
+                    <samplingRateChangeTimes spec="parameter.RealParameter" value="0 0.46"/> 
+                    <reverseTimeArrays spec="beast.core.parameter.BooleanParameter" value="true false true false false false"/>
+            </distribution>
+
+
+
+            <prior id="becomeUninfectiousRatePrior_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" name="distribution" x="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1">
+                <Exponential id="Exponential.1" name="distr">
+                    <parameter id="RealParameter.30" spec="parameter.RealParameter" estimate="false" name="mean">36.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="FrequenciesPrior.s:beast_2_gk_1_2_1" name="distribution" x="@freqParameter.s:beast_2_gk_1_2_1">
+                <Uniform id="Uniform.7" name="distr"/>
+            </prior>
+            <prior id="GammaShapePrior.s:beast_2_gk_1_2_1" name="distribution" x="@gammaShape.s:beast_2_gk_1_2_1">
+                <Exponential id="Exponential.0" name="distr">
+                    <parameter id="RealParameter.0" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                </Exponential>
+            </prior>
+            <prior id="PropInvariantPrior.s:beast_2_gk_1_2_1" name="distribution" x="@proportionInvariant.s:beast_2_gk_1_2_1">
+                <Uniform id="Uniform.6" name="distr"/>
+            </prior>
+            <prior id="RateACPrior.s:beast_2_gk_1_2_1" name="distribution" x="@rateAC.s:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.2" name="distr">
+                    <parameter id="RealParameter.7" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateAGPrior.s:beast_2_gk_1_2_1" name="distribution" x="@rateAG.s:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.3" name="distr">
+                    <parameter id="RealParameter.9" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.10" spec="parameter.RealParameter" estimate="false" name="beta">20.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateATPrior.s:beast_2_gk_1_2_1" name="distribution" x="@rateAT.s:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.4" name="distr">
+                    <parameter id="RealParameter.11" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.12" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateCGPrior.s:beast_2_gk_1_2_1" name="distribution" x="@rateCG.s:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.5" name="distr">
+                    <parameter id="RealParameter.13" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.14" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="RateGTPrior.s:beast_2_gk_1_2_1" name="distribution" x="@rateGT.s:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.7" name="distr">
+                    <parameter id="RealParameter.17" spec="parameter.RealParameter" estimate="false" name="alpha">0.05</parameter>
+                    <parameter id="RealParameter.18" spec="parameter.RealParameter" estimate="false" name="beta">10.0</parameter>
+                </Gamma>
+            </prior>
+            <prior id="reproductiveNumberPrior_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" name="distribution" x="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1">
+                <LogNormal id="LogNormalDistributionModel.3" name="distr">
+                    <parameter id="RealParameter.31" spec="parameter.RealParameter" estimate="false" name="M">0.8</parameter>
+                    <parameter id="RealParameter.32" spec="parameter.RealParameter" estimate="false" lower="0.0" name="S" upper="5.0">0.5</parameter>
+                </LogNormal>
+            </prior>
+            <prior id="samplingProportionPrior_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" name="distribution" x="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1">
+                <Beta id="Beta.1" name="distr">
+                    <parameter id="RealParameter.28" spec="parameter.RealParameter" estimate="false" name="alpha">1.0</parameter>
+                    <parameter id="RealParameter.29" spec="parameter.RealParameter" estimate="false" name="beta">275.0</parameter>
+                </Beta>
+            </prior>
+            <prior id="MeanRatePrior.c:beast_2_gk_1_2_1" name="distribution" x="@ucldMean.c:beast_2_gk_1_2_1">
+                <Uniform id="Uniform.10" lower="5.0E-4" name="distr" upper="0.0015"/>
+            </prior>
+            <prior id="ucldStdevPrior.c:beast_2_gk_1_2_1" name="distribution" x="@ucldStdev.c:beast_2_gk_1_2_1">
+                <Gamma id="Gamma.8" name="distr">
+                    <parameter id="RealParameter.20" spec="parameter.RealParameter" estimate="false" name="alpha">0.5396</parameter>
+                    <parameter id="RealParameter.21" spec="parameter.RealParameter" estimate="false" name="beta">0.3819</parameter>
+                </Gamma>
+            </prior>
+            <distribution id="root.height.prior" spec="beast.math.distributions.MRCAPrior" monophyletic="true" tree="@Tree.t:beast_2_gk_1_2_1">
+                <taxonset id="root.height" spec="TaxonSet">
+                    <taxon id="EPI_ISL_18290773" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18345829" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18345834" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18345853" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18345948" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18345996" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18394516" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415261" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415594" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415621" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415622" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415626" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415718" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18415724" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18453893" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18453916" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18453923" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18453929" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454122" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454123" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18454149" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515748" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515754" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515760" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515764" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515795" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515798" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515800" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515813" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515848" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515856" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515925" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515927" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515930" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18515948" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18516084" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524778" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18524796" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18563186" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608788" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608806" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18608813" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637717" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637721" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637723" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637724" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637733" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637741" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637744" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637749" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637761" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637766" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637866" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637874" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18637875" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648239" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648314" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648316" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648321" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18648323" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18655874" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702851" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702854" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18702855" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742275" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18742291" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773251" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773332" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773388" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773410" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773412" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773471" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773494" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18773500" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814313" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814316" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814318" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814319" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18814320" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829599" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829602" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18829678" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848830" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848852" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18848890" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18852887" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18934223" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18961955" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18961960" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971319" spec="Taxon"/>
+                    <taxon id="EPI_ISL_18971324" spec="Taxon"/>
+                    <taxon id="EPI_ISL_19058842" spec="Taxon"/>
+                </taxonset>
+                <Normal id="Normal.0" name="distr">
+                    <parameter id="RealParameter.33" spec="parameter.RealParameter" estimate="false" name="mean">2023.42</parameter>
+                    <parameter id="RealParameter.34" spec="parameter.RealParameter" estimate="false" name="sigma">0.001</parameter>
+                </Normal>
+            </distribution>
+        </distribution>
+        <distribution id="likelihood" spec="util.CompoundDistribution" useThreads="true">
+            <distribution id="treeLikelihood.beast_2_gk_1_2_1" spec="ThreadedTreeLikelihood" data="@beast_2_gk_1_2_1" tree="@Tree.t:beast_2_gk_1_2_1">
+                <siteModel id="SiteModel.s:beast_2_gk_1_2_1" spec="SiteModel" gammaCategoryCount="4" mutationRate="@mutationRate.s:beast_2_gk_1_2_1" proportionInvariant="@proportionInvariant.s:beast_2_gk_1_2_1" shape="@gammaShape.s:beast_2_gk_1_2_1">
+                    <substModel id="gtr.s:beast_2_gk_1_2_1" spec="GTR" rateAC="@rateAC.s:beast_2_gk_1_2_1" rateAG="@rateAG.s:beast_2_gk_1_2_1" rateAT="@rateAT.s:beast_2_gk_1_2_1" rateCG="@rateCG.s:beast_2_gk_1_2_1" rateGT="@rateGT.s:beast_2_gk_1_2_1">
+                        <parameter id="rateCT.s:beast_2_gk_1_2_1" spec="parameter.RealParameter" estimate="false" lower="0.0" name="rateCT">1.0</parameter>
+                        <frequencies id="estimatedFreqs.s:beast_2_gk_1_2_1" spec="Frequencies" frequencies="@freqParameter.s:beast_2_gk_1_2_1"/>
+                    </substModel>
+                </siteModel>
+                <branchRateModel id="RelaxedClock.c:beast_2_gk_1_2_1" spec="beast.evolution.branchratemodel.UCRelaxedClockModel" clock.rate="@ucldMean.c:beast_2_gk_1_2_1" rateCategories="@rateCategories.c:beast_2_gk_1_2_1" tree="@Tree.t:beast_2_gk_1_2_1">
+                    <LogNormal id="LogNormalDistributionModel.c:beast_2_gk_1_2_1" S="@ucldStdev.c:beast_2_gk_1_2_1" meanInRealSpace="true" name="distr">
+                        <parameter id="RealParameter.19" spec="parameter.RealParameter" estimate="false" lower="0.0" name="M" upper="1.0">1.0</parameter>
+                    </LogNormal>
+                </branchRateModel>
+            </distribution>
+        </distribution>
+        <distribution id="fossilCalibrations" spec="util.CompoundDistribution"/>
+    </distribution>
+
+    <operator id="FixMeanMutationRatesOperator" spec="DeltaExchangeOperator" delta="0.75" weight="2.0">
+        <parameter idref="mutationRate.s:beast_2_gk_1_2_1"/>
+        <weightvector id="weightparameter" spec="parameter.IntegerParameter" estimate="false" lower="0" upper="0">29409</weightvector>
+    </operator>
+
+    <operator id="proportionInvariantScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@proportionInvariant.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateACScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@rateAC.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateAGScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@rateAG.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateATScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@rateAT.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateCGScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@rateCG.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="RateGTScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@rateGT.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="ucldMeanScaler.c:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@ucldMean.c:beast_2_gk_1_2_1" scaleFactor="0.5" weight="1.0"/>
+
+    <operator id="ucldStdevScaler.c:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@ucldStdev.c:beast_2_gk_1_2_1" scaleFactor="0.5" weight="3.0"/>
+
+    <operator id="CategoriesRandomWalk.c:beast_2_gk_1_2_1" spec="IntRandomWalkOperator" parameter="@rateCategories.c:beast_2_gk_1_2_1" weight="10.0" windowSize="1"/>
+
+    <operator id="CategoriesSwapOperator.c:beast_2_gk_1_2_1" spec="SwapOperator" intparameter="@rateCategories.c:beast_2_gk_1_2_1" weight="10.0"/>
+
+    <operator id="CategoriesUniform.c:beast_2_gk_1_2_1" spec="UniformOperator" parameter="@rateCategories.c:beast_2_gk_1_2_1" weight="10.0"/>
+
+    <operator id="relaxedUpDownOperator.c:beast_2_gk_1_2_1" spec="UpDownOperator" scaleFactor="0.75" weight="3.0">
+        <up idref="ucldMean.c:beast_2_gk_1_2_1"/>
+        <down idref="Tree.t:beast_2_gk_1_2_1"/>
+    </operator>
+
+    <operator id="gammaShapeScaler.s:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@gammaShape.s:beast_2_gk_1_2_1" scaleFactor="0.5" weight="0.1"/>
+
+    <operator id="BDSKY_SerialCondRootTreeScaler.t:beast_2_gk_1_2_1" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:beast_2_gk_1_2_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootTreeRootScaler.t:beast_2_gk_1_2_1" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:beast_2_gk_1_2_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootUniformOperator.t:beast_2_gk_1_2_1" spec="Uniform" tree="@Tree.t:beast_2_gk_1_2_1" weight="30.0"/>
+
+    <operator id="BDSKY_SerialCondRootSubtreeSlide.t:beast_2_gk_1_2_1" spec="SubtreeSlide" tree="@Tree.t:beast_2_gk_1_2_1" weight="15.0"/>
+
+    <operator id="BDSKY_SerialCondRootNarrow.t:beast_2_gk_1_2_1" spec="Exchange" tree="@Tree.t:beast_2_gk_1_2_1" weight="15.0"/>
+
+    <operator id="BDSKY_SerialCondRootWide.t:beast_2_gk_1_2_1" spec="Exchange" isNarrow="false" tree="@Tree.t:beast_2_gk_1_2_1" weight="3.0"/>
+
+    <operator id="BDSKY_SerialCondRootWilsonBalding.t:beast_2_gk_1_2_1" spec="WilsonBalding" tree="@Tree.t:beast_2_gk_1_2_1" weight="3.0"/>
+
+    <operator id="becomeUninfectiousRateScaler_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" weight="2.0"/>
+
+    <operator id="reproductiveNumberScaler_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" weight="10.0"/>
+
+    <operator id="samplingProportionScaler_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="ScaleOperator" parameter="@samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" weight="10.0"/>
+
+    <operator id="updownBD_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1" spec="UpDownOperator" scaleFactor="0.75" weight="2.0">
+        <up idref="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+        <down idref="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+    </operator>
+
+    <operator id="FrequenciesExchanger.s:beast_2_gk_1_2_1" spec="DeltaExchangeOperator" delta="0.01" weight="0.1">
+        <parameter idref="freqParameter.s:beast_2_gk_1_2_1"/>
+    </operator>
+
+    <logger id="tracelog" spec="Logger" fileName="beast_2_gk_1_2_1.log" logEvery="10000" model="@posterior" sanitiseHeaders="true" sort="smart">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+        <log idref="treeLikelihood.beast_2_gk_1_2_1"/>
+        <log id="TreeHeight.t:beast_2_gk_1_2_1" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree.t:beast_2_gk_1_2_1"/>
+        <log idref="mutationRate.s:beast_2_gk_1_2_1"/>
+        <log idref="proportionInvariant.s:beast_2_gk_1_2_1"/>
+        <log idref="rateAC.s:beast_2_gk_1_2_1"/>
+        <log idref="rateAG.s:beast_2_gk_1_2_1"/>
+        <log idref="rateAT.s:beast_2_gk_1_2_1"/>
+        <log idref="rateCG.s:beast_2_gk_1_2_1"/>
+        <log idref="rateGT.s:beast_2_gk_1_2_1"/>
+        <log idref="ucldMean.c:beast_2_gk_1_2_1"/>
+        <log idref="ucldStdev.c:beast_2_gk_1_2_1"/>
+        <log id="rate.c:beast_2_gk_1_2_1" spec="beast.evolution.branchratemodel.RateStatistic" branchratemodel="@RelaxedClock.c:beast_2_gk_1_2_1" tree="@Tree.t:beast_2_gk_1_2_1"/>
+        <log idref="gammaShape.s:beast_2_gk_1_2_1"/>
+        <log idref="BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+        <log idref="becomeUninfectiousRate_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+        <log idref="reproductiveNumber_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+        <log idref="samplingProportion_BDSKY_SerialCondRoot.t:beast_2_gk_1_2_1"/>
+        <log idref="root.height.prior"/>
+        <log idref="freqParameter.s:beast_2_gk_1_2_1"/>
+    </logger>
+
+    <logger id="screenlog" spec="Logger" logEvery="10000">
+        <log idref="posterior"/>
+        <log idref="likelihood"/>
+        <log idref="prior"/>
+    </logger>
+
+    <logger id="treelog.t:beast_2_gk_1_2_1" spec="Logger" fileName="$(tree).trees" logEvery="10000" mode="tree">
+        <log id="TreeWithMetaDataLogger.t:beast_2_gk_1_2_1" spec="beast.evolution.tree.TreeWithMetaDataLogger" branchratemodel="@RelaxedClock.c:beast_2_gk_1_2_1" tree="@Tree.t:beast_2_gk_1_2_1"/>
+    </logger>
+
+</run>
+
+</beast>
